@@ -1,31 +1,142 @@
-/* General Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3f4f6;
+    background-color: #f4f4f9;
     color: #333;
-    overflow-x: hidden;
 }
 
-/* Advanced Header Section */
-.advanced-header {
+/* Header Section */
+.activity-header {
     display: flex;
     align-items: center;
     padding: 20px;
     background: linear-gradient(135deg, #ff66b2, #ff3385);
     color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile-pic {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin-right: 20px;
-    border: 3px solid #fff;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.activity-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .activity-info h2 {
-    font-size: 2em;
     margin: 0;
+    font-size: 2em;
+}
+
+.activity-info p {
+    margin: 5px 0 0;
+    color: #ddd;
+    font-size: 1.1em;
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff, #f0f0f5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.stat {
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.stat:hover {
+    transform: translateY(-10px);
+}
+
+.stat h3 {
+    margin: 10px 0 0;
+    font-size: 2em;
+    color: #ff3385;
+}
+
+/* Achievements Section */
+.badges {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.badge {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    transition: transform 0.2s;
+}
+
+.badge:hover {
+    transform: scale(1.2);
+}
+
+/* Map Styling */
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Navigation */
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ff3385;
+}
+
+.nav-icon {
+    font-size: 1.5em;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .stats-section {
+        flex-direction: column;
+    }
+
+    .stat {
+        margin: 10px 0;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
