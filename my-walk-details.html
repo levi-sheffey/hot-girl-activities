@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walk Details - Hot Girl Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Advanced Header Section for Activity -->
+    <header class="activity-header advanced-header">
+        <img src="user-profile.jpg" alt="Profile" class="profile-pic">
+        <div class="activity-info">
+            <h2>Afternoon Walk</h2>
+            <p>May 26, 2024 at 12:04 PM · Santa Barbara, California</p>
+        </div>
+    </header>
+
+    <!-- Stats Section with Advanced UI -->
+    <section class="stats-section advanced-stats">
+        <div class="stat">
+            <i class="fas fa-road stat-icon"></i>
+            <p>Distance</p>
+            <h3>5.70 mi</h3>
+        </div>
+        <div class="stat">
+            <i class="fas fa-stopwatch stat-icon"></i>
+            <p>Pace</p>
+            <h3>11:08 /mi</h3>
+        </div>
+        <div class="stat">
+            <i class="fas fa-clock stat-icon"></i>
+            <p>Time</p>
+            <h3>1h 3m</h3>
+        </div>
+        <div class="stat achievements">
+            <i class="fas fa-trophy stat-icon"></i>
+            <p>Achievements</p>
+            <div class="badges">
+                <img src="badge1.png" alt="Badge 1" class="badge">
+                <img src="badge2.png" alt="Badge 2" class="badge">
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section with Interactive Features -->
+    <div id="map-container">
+        <button id="zoom-route-btn" class="zoom-btn">Zoom to Route</button>
+        <div id="map"></div>
+    </div>
+
+    <!-- Footer Navigation with Advanced Icons -->
+    <footer class="footer-nav advanced-footer">
+        <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="maps.html"><i class="fas fa-map-marked-alt"></i><span>Maps</span></a>
+        <a href="record.html"><i class="fas fa-record-vinyl"></i><span>Record</span></a>
+        <a href="groups.html"><i class="fas fa-users"></i><span>Groups</span></a>
+        <a href="my-profile.html"><i class="fas fa-user"></i><span>You</span></a>
+    </footer>
+
+    <!-- Leaflet JS for OpenStreetMap -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="my-walk-details.js"></script>
+</body>
+</html>
