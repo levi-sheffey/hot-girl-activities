@@ -50,3 +50,23 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+
+<main>
+    <!-- Walk Type Buttons -->
+    <section class="walk-type-container">
+        <h2>Choose Your Walk Type</h2>
+        <button class="walk-type-btn" id="solo-walk">Solo Walk</button>
+        <button class="walk-type-btn" id="group-walk">Group Walk</button>
+        <button class="walk-type-btn" id="ghost-walk">Ghost Walk</button>
+    </section>
+
+    <!-- Map and Walk Info -->
+    <section id="walk-info" class="hidden">
+        <div id="map"></div>
+        <div id="walk-details">
+            <p>Distance: <span id="walk-distance">0.00</span> km</p>
+            <p>Time: <span id="walk-time">00:00:00</span></p>
+            <button id="end-walk-btn">End Walk</button>
+        </div>
+    </section>
+</main>
