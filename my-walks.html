@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Walks - Hot Girl Activities</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <!-- Leaflet CSS for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>My Walks</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link back to Home page -->
+                <li><a href="my-walks.html" class="active">My Walks</a></li>
+                <li><a href="start-walk.html">Start Walk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="walks-list">
+            <h2>Your Completed Walks</h2>
+            <ul id="walks-container">
+                <!-- This list will be populated by JavaScript with saved walks -->
+            </ul>
+        </section>
+
+        <!-- Section for viewing the map of a saved walk -->
+        <section id="map-section" style="display: none;">
+            <h2>View Route</h2>
+            <div id="map"></div>
+            <button id="back-to-walks">Back to Walks</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Hot Girl Activities</p>
+    </footer>
+
+    <!-- Leaflet JS for map -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Link to JavaScript file -->
+    <script src="my-walks.js"></script>
+</body>
+</html>
