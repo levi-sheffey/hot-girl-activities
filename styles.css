@@ -77,3 +77,34 @@ input[type="text"] {
 .hidden {
     display: none;
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#walk-details {
+    text-align: center;
+    margin: 20px;
+}
+
+#end-walk-btn {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#end-walk-btn:hover {
+    background-color: #ff3385;
+}
+
+.hidden {
+    display: none;
+}
