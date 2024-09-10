@@ -1,0 +1,53 @@
+project-directory/
+├── index.html          // Main HTML file
+├── styles.css          // CSS file for styling
+└── scripts.js          // JavaScript file for functionality
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Girl Activities</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Hot Girl Activities</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="my-walks">My Walks</a></li>
+                <li><a href="#" id="start-walk">Start Walk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Button to Start Walk - Ensure it’s above the map -->
+        <div class="button-container">
+            <button id="start-walk-btn">Start A Hot Girl Walk</button>
+        </div>
+
+        <!-- Map Section -->
+        <div id="map"></div>
+
+        <!-- Button to Finish Walk -->
+        <div class="button-container">
+            <button id="finish-walk-btn" style="display: none;">Finish Hot Girl Walk</button>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Hot Girl Activities</p>
+    </footer>
+
+    <!-- Leaflet JS for OpenStreetMap -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
