@@ -1,0 +1,65 @@
+/* Walks list styling */
+#walks-list {
+    padding: 20px;
+    text-align: center;
+}
+
+#walks-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#walks-list ul li {
+    background-color: #fff;
+    border: 1px solid #ff66b2;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#walks-list ul li .walk-info {
+    text-align: left;
+}
+
+#walks-list ul li button {
+    padding: 5px 10px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#walks-list ul li button:hover {
+    background-color: #ff3385;
+}
+
+/* Map Section Styling */
+#map-section {
+    padding: 20px;
+    display: none;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#back-to-walks {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-walks:hover {
+    background-color: #ff3385;
+}
