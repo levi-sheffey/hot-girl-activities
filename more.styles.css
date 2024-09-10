@@ -140,3 +140,119 @@ body {
         padding: 10px;
     }
 }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff66b2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Walk Type Container */
+.walk-type-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.walk-type-container h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ff3385;
+}
+
+.walk-type-btn {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.walk-type-btn:hover {
+    background-color: #ff3385;
+}
+
+/* Group Walk Link Container */
+#group-link-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.copy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ff66b2;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#copy-link-btn {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#copy-link-btn:hover {
+    background-color: #ff3385;
+}
+
+/* Ghost Walk Prompt Container */
+#ghost-walk-prompt {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#previous-walks {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
