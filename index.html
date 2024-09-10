@@ -51,3 +51,54 @@ project-directory/
     <script src="scripts.js"></script> <!-- Link to JavaScript file -->
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Walk - Hot Girl Activities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Hot Girl Activities</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-walks.html">My Walks</a></li>
+                <li><a href="#" id="start-walk">Start Walk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section with Walk Type Buttons -->
+    <main>
+        <section class="walk-type-container">
+            <h2>Choose Your Walk Type</h2>
+            <button class="walk-type-btn" id="solo-walk">Solo Walk</button>
+            <button class="walk-type-btn" id="group-walk">Group Walk</button>
+            <button class="walk-type-btn" id="ghost-walk">Ghost Walk</button>
+        </section>
+
+        <!-- Group Walk Link -->
+        <section id="group-link-container" class="hidden">
+            <p>Share this link to invite your friends to join the walk:</p>
+            <div class="copy-container">
+                <input type="text" id="group-walk-link" readonly>
+                <button id="copy-link-btn">Copy Link</button>
+            </div>
+        </section>
+
+        <!-- Ghost Walk Race Prompt -->
+        <section id="ghost-walk-prompt" class="hidden">
+            <p>Race against your previous walks! Choose a previous walk to race against:</p>
+            <select id="previous-walks"></select>
+            <button id="start-ghost-walk-btn">Start Ghost Walk</button>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
